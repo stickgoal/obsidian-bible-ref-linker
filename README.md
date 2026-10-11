@@ -62,13 +62,26 @@ Obsidian 插件：渲染时自动把圣经引用转换为内部链接。
 
 ## 安装
 
-1. 把 `manifest.json`、`main.js`、`styles.css` 复制到：
+### 从 GitHub 下载（仓库根目录即插件三件套）
+
+1. 克隆或下载本仓库，把 `manifest.json`、`main.js`、`styles.css` 复制到：
 
    ```
    <你的库>/.obsidian/plugins/bible-ref-linker/
    ```
 
 2. Obsidian → 设置 → 第三方插件 → 启用 **Bible Ref Linker**
+
+### 本地开发
+
+```bash
+git clone https://github.com/stickgoal/obsidian-bible-ref-linker.git
+cd obsidian-bible-ref-linker
+npm install
+npm run build
+# 然后把 main.js / manifest.json / styles.css 复制到
+# <你的库>/.obsidian/plugins/bible-ref-linker/
+```
 
 ## 开发
 
