@@ -1,0 +1,42 @@
+/* Bible Ref Linker */
+
+/* 圣经引用链接：默认沿用 Obsidian internal-link 样式，虚线下划线便于区分 */
+a.bible-ref.internal-link {
+	text-decoration-style: dotted;
+}
+
+/* 范围引用 hover 的多节段落预览浮层 */
+.bible-ref-popover {
+	position: fixed;
+	z-index: var(--layer-popover, 50);
+	max-width: 420px;
+	max-height: min(380px, 60vh);
+	overflow: auto;
+	/* 滚到底/顶后不把滚动传给编辑器，避免编辑器滚动间接触发关闭 */
+	overscroll-behavior: contain;
+	padding: 8px 14px;
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m, 8px);
+	box-shadow: var(--shadow-s);
+}
+
+/* 浮层内节标题压缩，紧凑显示多节 */
+.bible-ref-popover :is(h1, h2, h3, h4, h5, h6) {
+	font-size: 0.95em;
+	margin: 0.35em 0 0.15em;
+	color: var(--text-muted);
+}
+
+.bible-ref-popover hr {
+	margin: 0.5em 0;
+	border-color: var(--background-modifier-border);
+}
+
+.bible-ref-popover > :first-child {
+	margin-top: 0;
+}
+
+.bible-ref-popover > :last-child {
+	margin-bottom: 0;
+}

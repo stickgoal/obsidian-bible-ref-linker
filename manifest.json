@@ -1,0 +1,9 @@
+{
+  "id": "bible-ref-linker",
+  "name": "Bible Ref Linker",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "渲染时自动将中文圣经引用（如 太 25:36）转换为指向 [[马太福音 25#36]] 的内部链接；范围引用（太 25:36-38）自动链接到第一节。",
+  "author": "Lucas",
+  "isDesktopOnly": false
+}
